@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD EXPRESS MONGO APP</title>
+</head>
+<body>
+    <h1>Express and node all day</h1>
+    <div>one more time again hello hello this is ejs</div>
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="quote" name="quote">
+        <button type="submit">Submit</button>
+    </form>
+    <h2> Quotes </h2>
+
+    <ul class="quotes">
+        <!-- this loops through the quotes-->
+        <% for(var i=0; i < quotes.length; i++) {%>
+            <li class="quote">
+                <!-- outputs name from quote object [i]-->
+                <span><%= quotes[i].name %></span>
+                <!-- outputs quote from quote object [i]-->
+                <span><%= quotes[i].quote %></span>
+            </li>
+        <% } %>
+    </ul>
+
+    <div>
+        <h2>Team Rocket Invades</h2>
+        <p> Replace other quote with one from Team Rocket </p>
+        <button id="update-button"> Replace other quote</button>
+    </div>
+
+    <script scr="/main.js"></script>
+</body>
+
+<div>testing testing</div>
+
+
+
+</html>
