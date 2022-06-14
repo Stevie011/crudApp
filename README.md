@@ -5,4 +5,4 @@ This is a simple CRUD app that I've made by following this tutorial https://zell
 
 Thanks so much to the author for a great explanation.
 
-Comments are my own so they might make mre sense to me thean they do to you.
+Comments are my own so they might make mre sense to me than they do to you.
