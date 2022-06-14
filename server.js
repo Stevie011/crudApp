@@ -22,6 +22,8 @@ MongoClient.connect(connectionString, {useUnifiedTopology : true})
         //app.use(/***** */)
         app.use(bodyParser.urlencoded({extended: true})) //tells it to use bodyparser
 
+        //app.use(bodyParser.json()) think this lines meant to be in main.js
+
         app.get("/", (req, res) =>{
             //res.sendFile("/Users/stevenstewart/crudApp/index.html") //tells it which file to send to the server
             db.collection("quotes").find().toArray()    //changes collection called quotes to array
